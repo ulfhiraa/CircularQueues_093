@@ -46,17 +46,20 @@ public:
 		}
 		cout << "\nThe element deleted from the queue is : " << queue_array[FRONT] << "\n";
 
-		// cek jika antrean hanya memiliki 1 element
+		// cek jika antrean hanya memiliki 1 element. step 1
 		if (FRONT == REAR) {
-			FRONT = -1;
-			REAR = -1;
+			FRONT = -1; // step 1.a
+			REAR = -1; // step 1.b
 		}
 		else {
-			// jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array
-			if (FRONT == max - 1)
+			// jika elemen yang dihapus berada di posisi terakhir array, kembali ke awal array. step 2
+			if (FRONT == max - 1) // step 2.a
 				FRONT = 0;
 			else
-				FRONT = FRONT + 1;
+				FRONT = FRONT + 1; // step 3
 		}
+	}
+
+	void display() {
 	}
 };
