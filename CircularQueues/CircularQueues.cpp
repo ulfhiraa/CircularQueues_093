@@ -38,4 +38,6 @@ public:
 		queue_array[REAR] = num; // step 4
 	}
 
+	void remove() {
+	}
 };
