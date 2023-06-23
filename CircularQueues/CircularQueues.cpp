@@ -44,6 +44,12 @@ public:
 			cout << "Queue underflow\n";
 			return;
 		}
-		cout << "\nThe element deleted fromn the queue is : " << queue_array[FRONT] << "\n";
+		cout << "\nThe element deleted from the queue is : " << queue_array[FRONT] << "\n";
+
+		// cek jika antrean hanya memiliki 1 element
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
 	}
 };
