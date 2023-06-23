@@ -39,5 +39,10 @@ public:
 	}
 
 	void remove() {
+		// cek apakah antrean kosong
+		if (FRONT == -1) {
+			cout << "Queue underflow\n";
+			return;
+		}
 	}
 };
