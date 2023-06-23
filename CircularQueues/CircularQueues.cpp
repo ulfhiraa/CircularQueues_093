@@ -37,4 +37,5 @@ public:
 		}
 		queue_array[REAR] = num; // step 4
 	}
+
 };
